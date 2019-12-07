@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Modern, creative, and affordable webdesign solutions.">
+	<meta name="keywords" content="website design, modern, affordable, creative, web solutions">
+	<meta name="author" content="Vanya Andreeva">
+	<title> Interior Design Company | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="home">
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">Fancy</span> Interior Design</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<section id="showcase">
+		<!--<div class="container">
+			<h1>Affordable Professional Designer</h1>
+			
+		</div>-->
+		<div class="container-slideshow">
+			<div class="mySlides fade">
+			  <!--<div class="numbertext">1 / 3</div>-->
+			  <img src="./img/interior.jpg" style="width:100%">
+			  <div class="text">Designing Living Space</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <!--<div class="numbertext">2 / 3</div>-->
+			  <img src="./img/interior11.jpg" style="width:100%">
+			  <div class="text">Redesign Your Style</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <!--<div class="numbertext">3 / 3</div>-->
+			  <img src="./img/interior22.jpg" style="width:100%">
+			  <div class="text">Redefining Concepts</div>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+		</div>
+	</section>
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to our newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter Email">
+				<button class="btn1" type="submit">Subscribe</button>
+			</form>
+			
+		</div>
+		
+	</section>
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="./img/1.jpg">
+				<h3>Living Spaces</h3>
+				<p>Sed blandit ultrices tellus eget mattis. Cras aliquet urna purus, at varius ex pulvinar a. Fusce tincidunt sit amet nulla vitae aliquet. Pellentesque erat risus, accumsan quis purus vel, finibus sagittis nibh. </p>
+			</div>
+			<div class="box">
+				<img src="./img/2.jpg">
+				<h3>Living Rooms</h3>
+				<p>Quisque at risus ligula. Proin vestibulum nibh at augue tincidunt, sodales interdum velit fermentum. Aenean non interdum risus, non euismod massa. Vivamus placerat ac urna posuere vulputate. </p>
+			</div>
+			<div class="box">
+				<img src="./img/3.jpg">
+				<h3>Recreation&Free time </h3>
+				<p>Praesent mauris sem, sodales eget leo non, fringilla rhoncus nisi. In tincidunt sapien id enim rhoncus, vel scelerisque dolor laoreet. Duis at sapien eget velit consectetur aliquet ut sed arcu. </p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>FANCY - Affordable Interior Design, Copyright &copy; 2017</p>
+	</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+}
+</script>
+</body>
+</html>

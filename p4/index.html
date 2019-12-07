@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple JavaScript Image Slider</title>
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'image1.jpg';
+        images[1] = 'image2.jpg';
+        images[2] = 'image3.jpg';
+
+        function changeImg(){
+            document.slide.src = images[i];
+            if(i < images.length - 1){
+                i++;
+            } else{
+                i = 0; // resets slider
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+    </script>
+    <style>
+    header{
+        position: fixed;
+        top:0;
+        margin: 0;
+        z-index: 1;
+        line-height: 2;
+        background-color: #ccc;
+        font-size: 2vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 100vw;
+        text-align: center;
+        text-transform: capitalize;
+        opacity: 0.8;
+    }
+     .images{
+       width: 100vw;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> responsive javascript image slider   </h1>
+    </header>
+    <img name="slide" class="images" >
+
+</body>
+</html>

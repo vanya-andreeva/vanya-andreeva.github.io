@@ -1,0 +1,87 @@
+body, html{
+	height: 100%;
+	margin:0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+.par-img1, .par-img2, .par-img3, .par-img4{
+	position:relative;
+	opacity: 0.65;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.par-img1{
+	background-image: url("../img/veggie_basket.jpg");
+	min-height: 100%;
+}
+.par-img2{
+	background-image: url("../img/veggies_fall.jpg");
+	min-height: 400px;
+}
+.par-img3{
+	background-image: url("../img/fruit.png");
+	min-height: 400px;
+}
+.par-img4{
+	background-image: url("../img/spices.jpg");
+	min-height: 600px;
+}
+.secion{
+	text-align: center;
+	padding: 50px 80px;
+}
+.secion-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+.secion-dark{
+	background-color:#282e34;
+	color: #ddd;
+}
+.par-text{
+	position:absolute;
+	top:50%;
+	width: 100%;
+	text-align: center;
+}
+
+.par-text p{
+	font-size: 3vw;
+	color: #fff;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	height: 100%;
+}
+h2, p{
+	margin:0;
+	padding: 0;
+}
+section p, section h2{
+	text-align: center;
+	padding: 20px;
+}
+.contact {
+    float: right;
+    margin: 20px;
+}
+.contact a{
+	color:#fff;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
